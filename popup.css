@@ -1,0 +1,59 @@
+#popup {
+  width: 400px;
+  height: 500px;
+}
+
+#header {
+  width: 380px;
+  font-size: medium;
+  align-content: center;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#header-content {
+  margin-left: 10px;
+}
+
+#header-button button {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+button:active {
+  box-shadow: inset 0px 0px 5px #888;
+}
+
+#body {
+  width: 380px;
+  box-shadow: 5px 5px 3px lightgray;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#info {
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.repo {
+  width: 380px;
+  height: 100px;
+  margin: 5px 10px 10px 10px;
+  padding: 0px 5px;
+}
+
+.repo .user {
+  font-size: medium;
+}
+
+.card {
+  margin: 5px 10px 10px 10px !important;
+  padding: 0px 5px !important;
+  box-shadow: 5px 5px 3px lightgray;
+}
