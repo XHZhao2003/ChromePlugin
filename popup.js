@@ -5,7 +5,6 @@ $(document).ready(async function () {
 
 $("#button").on("click", async function(){
     const userName = await getStorage("userName")
-    console.log(userName)
     if(userName){
         await UpdateRepos()
         await ChangeDisplay("Repos")
@@ -59,8 +58,8 @@ async function UpdateRepos(){
     }]
 
     await setStorage("repos", repos)
+    $("#body").empty()
     for(repo of repos){
-        console.log(repo)
         await AppendRepoDOM(repo.userName, repo.repoName, repo.url)
     }   
 }
